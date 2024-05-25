@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="fichiercss.css">
+    <input type="text" id="affichage" class="ecriture" size="5">
+</head>
+<script>
+    function tempReel(){
+                let temp= new Date();
+                let heure= temp.getHours().toString().padStart(2,'0');
+                let minute = temp.getMinutes().toString().padStart(2,'0');
+                let seconde= temp.getSeconds().toString().padStart(2,'0');
+                let heureReel= heure+':'+minute+':'+seconde;
+                document.getElementById('affichage').value=heureReel;
+                setTimeout(tempReel,1000);
+            }
+            window.onload=tempReel;
+</script>
+<body class="couleur">
+    <h1>Portefolio Personnel</h1>
+
+            <p> class="ecriture">Un portfolio ou portefolio est un dossier personnel dans lequel les acquis de formation et 
+                les acquis de l'expérience d'une personne sont définis et démontrés 
+                en vue d'une reconnaissance par un établissement d'enseignement ou un employeur. 
+             En France, on voit parfois le terme de portefeuille de compétences.</p>
+             
+    <p>Durant mon parcours j'ai pu étudier ces technologies suivants: </p>
+    <table>
+        <tr>
+            <td>
+                <img src="html5.jpeg" alt="" class="block">
+            </td>
+            <td>
+                <img src="CCS3.jpeg" alt="" class="block">
+            </td>
+            <td>
+                <img src="JS.png" alt="" class="block">
+            </td>
+            <td>
+                <img src="PHP.jpeg" alt="" class="block">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Laravel.png" alt="" class="block">
+            </td>
+            <td>
+                <img src="Symfony.png" alt="" class="block">
+            </td>
+            <td>
+                <img src="WordPress.png" alt="" class="block">
+            </td>
+            <td>
+                <img src="React.png" alt="" class="block">
+            </td>
+        </tr>
+    </table>    
+
+    <blockquote>
+        ''Je suis un développeur web.J’ai travaillé avec des entreprises comme la 
+        <a href="https://www.sofitex.bf/">SOFITEX</a> qui a pour mission de valoriser 
+        le coton burkinabè par sa transformation et la création de plus-values.J'ai travaillé 
+        en les aidant à concevoir et développer des applications et sites web .''
+    </blockquote>
+
+    <p>L'objectif de ce portefolio est de mettre en valeur mes conmpétences professionnel <br/>
+        Elle sera structurée comme suite: 
+    </p>
+    <ul>
+        <li>
+           <a href="Accueil.html"> Accueil</a>
+        </li>
+        <li> <a href="apropos.html">A Propos</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+    </ul>
+    
+</body>
+</html>
